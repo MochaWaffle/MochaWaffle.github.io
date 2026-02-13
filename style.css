@@ -1,0 +1,37 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+/* Source: https://cssbud.com/css-generator/css-glow-generator/ */
+.decor{
+    -webkit-box-shadow:0px 0px 10px 0px #f0f0f0;
+    -moz-box-shadow: 0px 0px 10px 0px #f0f0f0;
+    box-shadow: 0px 0px 0px 10px #f0f0f0;
+}
+
+/* Source for glow: https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000;
+  }
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 10px #ffee32, 0 0 20px #ffee32, 0 0 30px #ffee32, 0 0 40px #ffee32;
+  }
+}
